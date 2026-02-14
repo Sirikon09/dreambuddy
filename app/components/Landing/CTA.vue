@@ -1,14 +1,16 @@
 <script setup lang="ts">
-const benefits = [
-  'Free forever - no credit card required',
-  'Unlimited savings goals',
-  'Beautiful progress tracking',
-  'Community support & inspiration'
-]
+const { $t } = useI18n()
+
+const benefits = computed(() => [
+  $t('cta.benefits.free'),
+  $t('cta.benefits.unlimited'),
+  $t('cta.benefits.tracking'),
+  $t('cta.benefits.community')
+])
 </script>
 
 <template>
-    <section class="py-20 sm:py-32 bg-linear-to-br from-primary-600 via-blue-600 to-primary-700 relative overflow-hidden">
+  <section class="py-20 sm:py-32 bg-linear-to-br from-primary-600 via-blue-600 to-primary-700 relative overflow-hidden">
     <!-- Background decoration -->
     <div class="absolute inset-0 -z-10">
       <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
@@ -26,12 +28,12 @@ const benefits = [
 
           <!-- Headline -->
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">
-            Start Building Your First
-            <span class="block">Savings Goal Today!</span>
+            {{ $t('cta.title') }}
+            <span class="block">{{ $t('cta.titleLine2') }}</span>
           </h2>
 
           <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Join thousands of users who are already turning their dreams into reality with DreamBuddy.
+            {{ $t('cta.subtitle') }}
           </p>
 
           <!-- Benefits List -->
@@ -54,7 +56,7 @@ const benefits = [
               class="shadow-lg shadow-primary-500/50 px-4 cursor-pointer"
             >
               <Icon name="i-heroicons-rocket-launch" class="w-5 h-5" />
-              Get Started Free
+              {{ $t('cta.buttons.start') }}
             </UButton>
             <UButton 
               size="xl" 
@@ -63,7 +65,7 @@ const benefits = [
               class="px-4 cursor-pointer"
             >
               <Icon name="i-heroicons-play-circle" class="w-5 h-5" />
-              See Demo
+              {{ $t('cta.buttons.demo') }}
             </UButton>
           </div>
 
@@ -78,8 +80,8 @@ const benefits = [
                   <div class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-lg border-2 border-white/50">👧</div>
                 </div>
                 <div class="text-left">
-                  <div class="text-white font-semibold">10,000+ Users</div>
-                  <div class="text-white/80 text-sm">Already saving smarter</div>
+                  <div class="text-white font-semibold">10,000+ {{ $t('cta.social.users') }}</div>
+                  <div class="text-white/80 text-sm">{{ $t('cta.social.subtitle') }}</div>
                 </div>
               </div>
 
@@ -92,8 +94,8 @@ const benefits = [
                   <Icon name="i-heroicons-star-solid" class="w-5 h-5 text-warning-300" />
                 </div>
                 <div class="text-left">
-                  <div class="text-white font-semibold">4.9/5 Rating</div>
-                  <div class="text-white/80 text-sm">From happy users</div>
+                  <div class="text-white font-semibold">4.9/5 {{ $t('cta.social.rating') }}</div>
+                  <div class="text-white/80 text-sm">{{ $t('cta.social.ratingSubtitle') }}</div>
                 </div>
               </div>
             </div>

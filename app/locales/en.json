@@ -1,0 +1,245 @@
+{
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How it works",
+    "community": "Community",
+    "testimonials": "Testimonials",
+    "signIn": "Sign In",
+    "startFree": "Start Free"
+  },
+  "hero": {
+    "badge": "#1 Savings Goal Tracker",
+    "title": "Turn Your Dreams",
+    "titleHighlight": "Into Reality",
+    "subtitle": "Set savings goals, track progress automatically, and share your journey with the community. Make your financial dreams come true with DreamBuddy.",
+    "startFree": "Start Free",
+    "seeDemo": "See Demo",
+    "stats": {
+      "activeUsers": "Active Users",
+      "goalsCreated": "Goals Created",
+      "savingsAchieved": "Savings Achieved"
+    },
+    "goalCard": {
+      "dreamHouse": "Dream House",
+      "by": "by",
+      "public": "Public",
+      "progress": "Progress",
+      "saved": "Saved",
+      "goal": "Goal",
+      "dailyTarget": "Daily target",
+      "addSavings": "Add Savings"
+    }
+  },
+  "features": {
+    "badge": "Features",
+    "title": "Everything You Need to",
+    "titleHighlight": "Achieve Your Goals",
+    "subtitle": "Powerful features designed to help you save smarter and reach your dreams faster.",
+    "items": {
+      "unlimitedGoals": {
+        "title": "Unlimited Goals",
+        "description": "Create as many savings goals as you want. No limits, no restrictions."
+      },
+      "autoCalculate": {
+        "title": "Auto Calculate",
+        "description": "Automatically calculate daily, weekly, or monthly savings needed."
+      },
+      "beautifulDashboard": {
+        "title": "Beautiful Dashboard",
+        "description": "Track all your progress with an intuitive and beautiful interface."
+      },
+      "sharePublicly": {
+        "title": "Share Publicly",
+        "description": "Inspire others by sharing your goals or keep them private."
+      }
+    },
+    "cta": {
+      "title": "Ready to start saving smarter?",
+      "subtitle": "Join thousands of users who are already achieving their financial goals.",
+      "button": "Get Started Free"
+    }
+  },
+  "community": {
+    "badge": "Community",
+    "title": "Get Inspired by",
+    "titleHighlight": "Others' Success",
+    "subtitle": "See what goals people are working towards and get motivated to achieve yours.",
+    "progress": "Progress",
+    "saved": "Saved",
+    "goal": "Goal",
+    "likes": "likes",
+    "exploreAll": "Explore All Goals"
+  },
+  "howItWorks": {
+    "badge": "How It Works",
+    "title": "Simple Steps to",
+    "titleHighlight": "Reach Your Dreams",
+    "subtitle": "Start saving smarter in just 4 easy steps.",
+    "steps": {
+      "step1": {
+        "title": "Set Your Goal",
+        "description": "Create a savings goal with your target amount and deadline. Add a name and choose to make it public or private."
+      },
+      "step2": {
+        "title": "Track Your Progress",
+        "description": "Log your savings regularly. Our system automatically calculates how much you need to save daily to reach your target."
+      },
+      "step3": {
+        "title": "Share or Keep Private",
+        "description": "Choose to share your goals publicly to inspire others, or keep them private for personal tracking for some people only."
+      },
+      "step4": {
+        "title": "Celebrate Success",
+        "description": "When you reach your goal, celebrate your achievement! Get badges and share your success with the large community."
+      }
+    },
+    "cta": {
+      "question": "Ready to start your journey?",
+      "button": "Create Your First Goal"
+    }
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "What Our Users",
+    "titleHighlight": "Are Saying",
+    "subtitle": "Join thousands of happy users who achieved their financial goals with DreamBuddy.",
+    "stats": {
+      "rating": "Average Rating",
+      "users": "Happy Users",
+      "successRate": "Success Rate",
+      "totalSaved": "Total Saved"
+    }
+  },
+  "cta": {
+    "icon": "✨",
+    "title": "Start Building Your First",
+    "titleLine2": "Savings Goal Today!",
+    "subtitle": "Join thousands of users who are already turning their dreams into reality with DreamBuddy.",
+    "benefits": {
+      "free": "Free - no credit card required",
+      "unlimited": "Unlimited savings goals",
+      "tracking": "Beautiful progress tracking",
+      "community": "Community support & inspiration"
+    },
+    "buttons": {
+      "start": "Get Started Free",
+      "demo": "Watch Demo"
+    },
+    "social": {
+      "users": "Users",
+      "subtitle": "Already saving smarter",
+      "rating": "Rating",
+      "ratingSubtitle": "From happy users"
+    }
+  },
+  "footer": {
+    "description": "Turn your dreams into reality with smart savings tracking and community support.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "newsletter": {
+      "title": "Newsletter",
+      "subtitle": "Get savings tips & updates",
+      "placeholder": "Your email"
+    },
+    "links": {
+      "features": "Features",
+      "howItWorks": "How it Works",
+      "pricing": "Pricing",
+      "faq": "FAQ",
+      "about": "About",
+      "blog": "Blog",
+      "careers": "Careers",
+      "contact": "Contact",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "cookies": "Cookie Policy",
+      "licenses": "Licenses"
+    },
+    "copyright": "DreamBuddy. All rights reserved.",
+    "bottom": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookies"
+    }
+  },
+  "auth": {
+    "backToHome": "Back to Homepage",
+    "leftPanel": {
+      "title": "Start Your Savings Journey Today",
+      "subtitle": "Join thousands of users who are making their dreams come true with DreamBuddy.",
+      "stats": {
+        "users": "Users",
+        "goals": "Goals",
+        "saved": "Saved"
+      },
+      "quote": "DreamBuddy helped me save for my dream house in just 2 years!",
+      "quoteAuthor": "Happy DreamBuddy User"
+    },
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to continue your savings journey",
+      "continueWithGoogle": "Continue with Google",
+      "continueWithGithub": "Continue with Github",
+      "orContinueWith": "Or continue with email",
+      "email": "Email address",
+      "emailPlaceholder": "Enter your email",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "signIn": "Sign in",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "invalidEmail": "Invalid email address",
+      "passwordTooShort": "Password must be at least 6 characters",
+      "successTitle": "Success",
+      "successMessage": "Logged in successfully",
+      "errorTitle": "Error",
+      "errorMessage": "Login failed"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Start saving for your dreams today",
+      "continueWithGoogle": "Continue with Google",
+      "continueWithGithub": "Continue with Github",
+      "orRegisterWith": "Or register with email",
+      "name": "Full name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email address",
+      "emailPlaceholder": "Enter your email",
+      "password": "Password",
+      "passwordPlaceholder": "Create a password",
+      "confirmPassword": "Confirm password",
+      "confirmPasswordPlaceholder": "Confirm your password",
+      "agreeToTerms": "I agree to the",
+      "termsOfService": "Terms of Service",
+      "and": "and",
+      "privacyPolicy": "Privacy Policy",
+      "createAccount": "Create account",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "nameRequired": "Name is required",
+      "username": "Username",
+      "usernamePlaceholder": "Enter your username",
+      "usernameTooShort": "Username must be at least 3 characters",
+      "mustAgreeTerms": "You must agree to the terms",
+      "passwordsDoNotMatch": "Passwords do not match",
+      "successMessage": "Account created successfully",
+      "errorMessage": "Registration failed"
+    },
+    "forgotPassword": {
+      "title": "Reset Password",
+      "subtitle": "Enter your email address and we'll send you a link to reset your password",
+      "email": "Email address",
+      "emailPlaceholder": "Enter your email",
+      "emailHint": "We'll send you a password reset link to this email",
+      "sendResetLink": "Send reset link",
+      "backToLogin": "Back to login",
+      "checkEmail": "Check your email",
+      "emailSent": "We sent a password reset link to",
+      "instructions": "Click the link in the email to reset your password. If you don't see the email, check your spam folder.",
+      "resendEmail": "Resend email"
+    }
+  }
+}

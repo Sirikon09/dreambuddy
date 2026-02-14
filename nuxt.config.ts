@@ -2,6 +2,21 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   modules: ['@nuxt/ui',
+    ['nuxt-i18n-micro', {
+      locales: [
+        { code: 'en', iso: 'en-US', name: 'English', dir: 'ltr' },
+        { code: 'th', iso: 'th-TH', name: 'ไทย', dir: 'ltr' },
+        { code: 'jp', iso: 'jp-JP', name: '日本語', dir: 'ltr' },
+        { code: 'la', iso: 'lo-LA', name: 'ລາວ', dir: 'ltr' }
+      ],
+      defaultLocale: 'en', // ตั้งค่าภาษาเริ่มต้นเป็นอังกฤษ
+      translationDir: 'app/locales', // โฟลเดอร์ที่เก็บไฟล์แปลภาษา
+      meta: true, // เปิดใช้งานการจัดการ meta tags สำหรับ SEO
+      autoDetectLanguage: false, // ปิดการตรวจจับภาษาของเบราว์เซอร์
+      includeDefaultLocaleRoute: false, // ไม่รวมรหัสภาษาสำหรับภาษาเริ่มต้นใน URL
+      types: 'all', // สร้างไทป์สำหรับทุกภาษา
+      disablePageLocales: true, // ปิดการใช้งานการสร้างหน้าแยกตามภาษา
+    }],
     ['@nuxtjs/google-fonts', {
       families: {
         Inter: '200..700',

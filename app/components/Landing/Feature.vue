@@ -1,48 +1,50 @@
 <script setup lang="ts">
-const features = [
+const { $t } = useI18n()
+
+const features = computed(() => [
   {
     icon: 'i-heroicons-flag',
-    title: 'Unlimited Goals',
-    description: 'Create as many savings goals as you want. No limits, no restrictions.',
-    color: 'primary'
+    title: $t('features.items.unlimitedGoals.title'),
+    description: $t('features.items.unlimitedGoals.description'),
+    color: 'secondary'
   },
   {
     icon: 'i-heroicons-calculator',
-    title: 'Auto Calculate',
-    description: 'Automatically calculate daily, weekly, or monthly savings needed.',
+    title: $t('features.items.autoCalculate.title'),
+    description: $t('features.items.autoCalculate.description'),
     color: 'success'
   },
   {
     icon: 'i-heroicons-chart-bar',
-    title: 'Beautiful Dashboard',
-    description: 'Track all your progress with an intuitive and beautiful interface.',
+    title: $t('features.items.beautifulDashboard.title'),
+    description: $t('features.items.beautifulDashboard.description'),
     color: 'warning'
   },
   {
     icon: 'i-heroicons-share',
-    title: 'Share Publicly',
-    description: 'Inspire others by sharing your goals or keep them private.',
+    title: $t('features.items.sharePublicly.title'),
+    description: $t('features.items.sharePublicly.description'),
     color: 'error'
   }
-]
+])
 </script>
 
 <template>
-    <section id="features" class="py-20 sm:py-32 bg-white dark:bg-gray-950">
+  <section id="features" class="py-20 sm:py-32 bg-white dark:bg-gray-950">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-16">
         <UBadge color="primary" variant="subtle" size="lg" class="mb-4">
-          Features
+          {{ $t('features.badge') }}
         </UBadge>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
-          Everything You Need to
+          {{ $t('features.title') }}
           <span class="block bg-linear-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
-            Achieve Your Goals
+            {{ $t('features.titleHighlight') }}
           </span>
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          Powerful features designed to help you save smarter and reach your dreams faster.
+          {{ $t('features.subtitle') }}
         </p>
       </div>
 
@@ -59,7 +61,7 @@ const features = [
               <div 
                 class="w-14 h-14 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
                 :class="{
-                  'bg-primary-100 dark:bg-primary-900/30': feature.color === 'primary',
+                  'bg-secondary-100 dark:bg-secondary-900/30': feature.color === 'secondary',
                   'bg-success-100 dark:bg-success-900/30': feature.color === 'success',
                   'bg-warning-100 dark:bg-warning-900/30': feature.color === 'warning',
                   'bg-error-100 dark:bg-error-900/30': feature.color === 'error',
@@ -69,7 +71,7 @@ const features = [
                   :name="feature.icon" 
                   class="w-7 h-7"
                   :class="{
-                    'text-primary-600 dark:text-primary-400': feature.color === 'primary',
+                    'text-secondary-600 dark:text-secondary-400': feature.color === 'secondary',
                     'text-success-600 dark:text-success-400': feature.color === 'success',
                     'text-warning-600 dark:text-warning-400': feature.color === 'warning',
                     'text-error-600 dark:text-error-400': feature.color === 'error',
@@ -97,15 +99,15 @@ const features = [
           <div class="flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex-1 text-left">
               <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                Ready to start saving smarter?
+                {{ $t('features.cta.title') }}
               </h3>
               <p class="text-gray-600 dark:text-gray-300">
-                Join thousands of users who are already achieving their financial goals.
+                {{ $t('features.cta.subtitle') }}
               </p>
             </div>
-            <UButton size="lg" color="primary" class="whitespace-nowrap px-4 cursor-pointer">
-              Get Started Free
-              <Icon name="i-heroicons-arrow-right" class="w-5 h-5" />
+            <UButton size="lg" color="primary" class="whitespace-nowrap cursor-pointer px-6 py-3">
+              {{ $t('features.cta.button') }}
+              <Icon name="i-heroicons-arrow-right" class="w-5 h-5 ml-2" />
             </UButton>
           </div>
         </UCard>

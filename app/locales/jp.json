@@ -1,0 +1,245 @@
+{
+  "nav": {
+    "features": "機能",
+    "howItWorks": "使い方",
+    "community": "コミュニティ",
+    "testimonials": "お客様の声",
+    "signIn": "ログイン",
+    "startFree": "無料で始める"
+  },
+  "hero": {
+    "badge": "#1 貯金目標トラッカー",
+    "title": "あなたの夢を",
+    "titleHighlight": "現実に",
+    "subtitle": "貯金目標を設定し、進捗を自動的に追跡し、コミュニティとあなたの旅を共有しましょう。DreamBuddyであなたの経済的な夢を実現させましょう。",
+    "startFree": "無料で始める",
+    "seeDemo": "デモを見る",
+    "stats": {
+      "activeUsers": "アクティブユーザー",
+      "goalsCreated": "作成された目標",
+      "savingsAchieved": "達成された貯金"
+    },
+    "goalCard": {
+      "dreamHouse": "夢のマイホーム",
+      "by": "投稿者",
+      "public": "公開",
+      "progress": "進捗",
+      "saved": "貯金済み",
+      "goal": "目標",
+      "dailyTarget": "1日の目標",
+      "addSavings": "貯金を追加"
+    }
+  },
+  "features": {
+    "badge": "機能",
+    "title": "あなたの目標達成に",
+    "titleHighlight": "必要なすべて",
+    "subtitle": "より賢く貯金し、夢をより早く実現するために設計された強力な機能。",
+    "items": {
+      "unlimitedGoals": {
+        "title": "無制限の目標",
+        "description": "好きなだけ貯金目標を作成できます。制限も制約もありません。"
+      },
+      "autoCalculate": {
+        "title": "自動計算",
+        "description": "必要な日次、週次、または月次の貯金額を自動的に計算します。"
+      },
+      "beautifulDashboard": {
+        "title": "美しいダッシュボード",
+        "description": "直感的で美しいインターフェースですべての進捗を追跡できます。"
+      },
+      "sharePublicly": {
+        "title": "公開共有",
+        "description": "目標を公開して他の人にインスピレーションを与えるか、プライベートに保つことができます。"
+      }
+    },
+    "cta": {
+      "title": "より賢く貯金を始める準備はできましたか？",
+      "subtitle": "すでに財務目標を達成している何千人ものユーザーに参加しましょう。",
+      "button": "無料で始める"
+    }
+  },
+  "community": {
+    "badge": "コミュニティ",
+    "title": "他の人の成功から",
+    "titleHighlight": "インスピレーションを得る",
+    "subtitle": "人々がどのような目標に取り組んでいるかを見て、あなたの目標達成のモチベーションを高めましょう。",
+    "progress": "進捗",
+    "saved": "貯金済み",
+    "goal": "目標",
+    "likes": "いいね",
+    "exploreAll": "すべての目標を見る"
+  },
+  "howItWorks": {
+    "badge": "使い方",
+    "title": "夢を実現するための",
+    "titleHighlight": "シンプルなステップ",
+    "subtitle": "たった4つの簡単なステップでより賢い貯金を始めましょう。",
+    "steps": {
+      "step1": {
+        "title": "目標を設定",
+        "description": "目標金額と期限を設定して貯金目標を作成します。名前を追加し、公開またはプライベートにするかを選択します。"
+      },
+      "step2": {
+        "title": "進捗を追跡",
+        "description": "定期的に貯金を記録します。システムが自動的に目標達成に必要な1日の貯金額を計算します。"
+      },
+      "step3": {
+        "title": "共有またはプライベート",
+        "description": "目標を公開して他の人にインスピレーションを与えるか、個人的な追跡のためにプライベートに保つかを選択します。"
+      },
+      "step4": {
+        "title": "成功を祝う",
+        "description": "目標を達成したら、その成果を祝いましょう！バッジを獲得し、大きなコミュニティと成功を共有しましょう。"
+      }
+    },
+    "cta": {
+      "question": "旅を始める準備はできましたか？",
+      "button": "最初の目標を作成"
+    }
+  },
+  "testimonials": {
+    "badge": "お客様の声",
+    "title": "ユーザーの",
+    "titleHighlight": "声を聞く",
+    "subtitle": "DreamBuddyで財務目標を達成した何千人もの満足したユーザーに参加しましょう。",
+    "stats": {
+      "rating": "平均評価",
+      "users": "満足したユーザー",
+      "successRate": "成功率",
+      "totalSaved": "総貯金額"
+    }
+  },
+  "cta": {
+    "icon": "✨",
+    "title": "最初の貯金目標を",
+    "titleLine2": "今日から始めましょう！",
+    "subtitle": "すでにDreamBuddyで夢を現実に変えている何千人ものユーザーに参加しましょう。",
+    "benefits": {
+      "free": "無料 - クレジットカード不要",
+      "unlimited": "無制限の貯金目標",
+      "tracking": "美しい進捗追跡",
+      "community": "コミュニティサポート＆インスピレーション"
+    },
+    "buttons": {
+      "start": "無料で始める",
+      "demo": "デモを見る"
+    },
+    "social": {
+      "users": "ユーザー",
+      "subtitle": "すでに賢く貯金中",
+      "rating": "評価",
+      "ratingSubtitle": "満足したユーザーから"
+    }
+  },
+  "footer": {
+    "description": "スマートな貯金追跡とコミュニティサポートで、あなたの夢を現実に変えましょう。",
+    "product": "製品",
+    "company": "会社",
+    "legal": "法的情報",
+    "newsletter": {
+      "title": "ニュースレター",
+      "subtitle": "貯金のヒントとアップデートを受け取る",
+      "placeholder": "メールアドレス"
+    },
+    "links": {
+      "features": "機能",
+      "howItWorks": "使い方",
+      "pricing": "料金",
+      "faq": "よくある質問",
+      "about": "会社概要",
+      "blog": "ブログ",
+      "careers": "採用情報",
+      "contact": "お問い合わせ",
+      "privacy": "プライバシー",
+      "terms": "利用規約",
+      "cookies": "クッキーポリシー",
+      "licenses": "ライセンス"
+    },
+    "copyright": "DreamBuddy. 全著作権所有。",
+    "bottom": {
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約",
+      "cookies": "クッキー"
+    }
+  },
+  "auth": {
+    "backToHome": "ホームページに戻る",
+    "leftPanel": {
+      "title": "今日から貯金の旅を始めましょう",
+      "subtitle": "DreamBuddyで夢を実現している何千人ものユーザーに参加しましょう。",
+      "stats": {
+        "users": "ユーザー",
+        "goals": "目標",
+        "saved": "貯金済み"
+      },
+      "quote": "DreamBuddyのおかげで、わずか2年で夢のマイホームのための貯金ができました！",
+      "quoteAuthor": "満足したDreamBuddyユーザー"
+    },
+    "login": {
+      "title": "おかえりなさい",
+      "subtitle": "貯金の旅を続けるためにログインしてください",
+      "continueWithGoogle": "Googleで続ける",
+      "continueWithGithub": "Githubで続ける",
+      "orContinueWith": "またはメールで続ける",
+      "email": "メールアドレス",
+      "emailPlaceholder": "メールアドレスを入力",
+      "password": "パスワード",
+      "passwordPlaceholder": "パスワードを入力",
+      "rememberMe": "ログイン状態を保持",
+      "forgotPassword": "パスワードを忘れましたか？",
+      "signIn": "ログイン",
+      "noAccount": "アカウントをお持ちでないですか？",
+      "signUp": "新規登録",
+      "invalidEmail": "無効なメールアドレスです",
+      "passwordTooShort": "パスワードは6文字以上である必要があります",
+      "successTitle": "成功",
+      "successMessage": "ログインしました",
+      "errorTitle": "エラー",
+      "errorMessage": "ログインに失敗しました"
+    },
+    "register": {
+      "title": "アカウント作成",
+      "subtitle": "今日から夢のための貯金を始めましょう",
+      "continueWithGoogle": "Googleで続ける",
+      "continueWithGithub": "Githubで続ける",
+      "orRegisterWith": "またはメールで登録",
+      "name": "フルネーム",
+      "namePlaceholder": "お名前を入力",
+      "email": "メールアドレス",
+      "emailPlaceholder": "メールアドレスを入力",
+      "password": "パスワード",
+      "passwordPlaceholder": "パスワードを作成",
+      "confirmPassword": "パスワード確認",
+      "confirmPasswordPlaceholder": "パスワードを確認",
+      "agreeToTerms": "同意します",
+      "termsOfService": "利用規約",
+      "and": "と",
+      "privacyPolicy": "プライバシーポリシー",
+      "createAccount": "アカウントを作成",
+      "haveAccount": "すでにアカウントをお持ちですか？",
+      "signIn": "ログイン",
+      "nameRequired": "名前は必須です",
+      "username": "ユーザー名",
+      "usernamePlaceholder": "ユーザー名を入力",
+      "usernameTooShort": "ユーザー名は3文字以上である必要があります",
+      "mustAgreeTerms": "利用規約に同意する必要があります",
+      "passwordsDoNotMatch": "パスワードが一致しません",
+      "successMessage": "アカウントが正常に作成されました",
+      "errorMessage": "登録に失敗しました"
+    },
+    "forgotPassword": {
+      "title": "パスワードをリセット",
+      "subtitle": "メールアドレスを入力すると、パスワードリセット用のリンクをお送りします",
+      "email": "メールアドレス",
+      "emailPlaceholder": "メールアドレスを入力",
+      "emailHint": "このメールアドレスにパスワードリセット用のリンクを送信します",
+      "sendResetLink": "リセットリンクを送信",
+      "backToLogin": "ログインに戻る",
+      "checkEmail": "メールをご確認ください",
+      "emailSent": "パスワードリセット用のリンクを送信しました：",
+      "instructions": "メール内のリンクをクリックしてパスワードをリセットしてください。メールが見つからない場合は、迷惑メールフォルダをご確認ください。",
+      "resendEmail": "メールを再送信"
+    }
+  }
+}

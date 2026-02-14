@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { $t } = useI18n()
+
 const communityGoals = [
   {
     id: 1,
@@ -88,7 +90,7 @@ const communityGoals = [
     id: 8,
     title: 'Dream Vacation',
     author: 'Chris Lee',
-    avatar: '🧑‍✈️',
+    avatar: '🧑',
     icon: 'i-heroicons-paper-airplane',
     iconColor: 'error',
     progress: 70,
@@ -99,30 +101,30 @@ const communityGoals = [
 ]
 
 const formatCurrency = (amount: number) => {
-  return new Intl.NumberFormat('en-US', {
+  return new Intl.NumberFormat('en-TH', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'THB',
     minimumFractionDigits: 0
   }).format(amount)
 }
 </script>
 
 <template>
-    <section id="community" class="py-20 sm:py-32 bg-gray-50 dark:bg-gray-900">
+  <section id="community" class="py-20 sm:py-32 bg-gray-50 dark:bg-gray-900">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-16">
         <UBadge color="primary" variant="subtle" size="lg" class="mb-4">
-          Community
+          {{ $t('community.badge') }}
         </UBadge>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
-          Get Inspired by
+          {{ $t('community.title') }}
           <span class="block bg-linear-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
-            Others' Success
+            {{ $t('community.titleHighlight') }}
           </span>
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          See what goals people are working towards and get motivated to achieve yours.
+          {{ $t('community.subtitle') }}
         </p>
       </div>
 
@@ -172,24 +174,24 @@ const formatCurrency = (amount: number) => {
             <!-- Progress -->
             <div class="mb-3">
               <div class="flex justify-between text-xs mb-1">
-                <span class="text-gray-600 dark:text-gray-400">Progress</span>
+                <span class="text-gray-600 dark:text-gray-400">{{ $t('community.progress') }}</span>
                 <span class="font-semibold text-primary-600 dark:text-primary-400">
                   {{ goal.progress }}%
                 </span>
               </div>
-              <UProgress v-model="goal.progress" size="sm" />
+              <UProgress v-model="goal.progress" size="sm" :aria-label="`${goal.title} progress: ${goal.progress}%`" />
             </div>
 
             <!-- Amount -->
             <div class="flex justify-between text-sm mb-4">
               <div>
-                <div class="text-xs text-gray-500 dark:text-gray-400">Saved</div>
+                <div class="text-xs text-gray-500 dark:text-gray-400">{{ $t('community.saved') }}</div>
                 <div class="font-bold text-gray-900 dark:text-white">
                   {{ formatCurrency(goal.saved) }}
                 </div>
               </div>
               <div class="text-right">
-                <div class="text-xs text-gray-500 dark:text-gray-400">Goal</div>
+                <div class="text-xs text-gray-500 dark:text-gray-400">{{ $t('community.goal') }}</div>
                 <div class="font-bold text-gray-900 dark:text-white">
                   {{ formatCurrency(goal.target) }}
                 </div>
@@ -199,7 +201,7 @@ const formatCurrency = (amount: number) => {
             <!-- Likes -->
             <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
               <Icon name="i-heroicons-heart-solid" class="w-4 h-4 text-error-500 mr-1" />
-              <span>{{ goal.likes }} likes</span>
+              <span>{{ goal.likes }} {{ $t('community.likes') }}</span>
             </div>
           </UCard>
         </div>
@@ -207,9 +209,9 @@ const formatCurrency = (amount: number) => {
 
       <!-- CTA -->
       <div class="text-center">
-        <UButton size="lg" variant="outline" class="px-4 cursor-pointer">
-          Explore All Goals
-          <Icon name="i-heroicons-arrow-right" class="w-5 h-5" />
+        <UButton size="lg" variant="outline" class="cursor-pointer px-4">
+          {{ $t('community.exploreAll') }}
+          <Icon name="i-heroicons-arrow-right" class="w-5 h-5 ml-2" />
         </UButton>
       </div>
     </div>

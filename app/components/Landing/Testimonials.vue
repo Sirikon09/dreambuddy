@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { $t } = useI18n()
+
 const testimonials = [
   {
     id: 1,
@@ -34,21 +36,21 @@ const testimonials = [
 </script>
 
 <template>
-    <section id="testimonials" class="py-20 sm:py-32 bg-gray-50 dark:bg-gray-900">
+  <section id="testimonials" class="py-20 sm:py-32 bg-gray-50 dark:bg-gray-900">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-16">
         <UBadge color="primary" variant="subtle" size="lg" class="mb-4">
-          Testimonials
+          {{ $t('testimonials.badge') }}
         </UBadge>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
-          What Our Users
+          {{ $t('testimonials.title') }}
           <span class="block bg-linear-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent">
-            Are Saying
+            {{ $t('testimonials.titleHighlight') }}
           </span>
         </h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-          Join thousands of happy users who achieved their financial goals with DreamBuddy.
+          {{ $t('testimonials.subtitle') }}
         </p>
       </div>
 
@@ -115,7 +117,7 @@ const testimonials = [
             4.9/5
           </div>
           <div class="text-sm text-gray-600 dark:text-gray-400">
-            Average Rating
+            {{ $t('testimonials.stats.rating') }}
           </div>
         </div>
         <div class="text-center">
@@ -123,7 +125,7 @@ const testimonials = [
             10,000+
           </div>
           <div class="text-sm text-gray-600 dark:text-gray-400">
-            Happy Users
+            {{ $t('testimonials.stats.users') }}
           </div>
         </div>
         <div class="text-center">
@@ -131,7 +133,7 @@ const testimonials = [
             85%
           </div>
           <div class="text-sm text-gray-600 dark:text-gray-400">
-            Success Rate
+            {{ $t('testimonials.stats.successRate') }}
           </div>
         </div>
         <div class="text-center">
@@ -139,7 +141,7 @@ const testimonials = [
             $10M+
           </div>
           <div class="text-sm text-gray-600 dark:text-gray-400">
-            Total Saved
+            {{ $t('testimonials.stats.totalSaved') }}
           </div>
         </div>
       </div>

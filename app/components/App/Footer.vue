@@ -1,26 +1,26 @@
 <script setup lang="ts">
-// ตัวแปรสำหรับปีปัจจุบัน
+const { $t } = useI18n()
+
 const currentYear = new Date().getFullYear()
 
-// ลิงก์สำหรับส่วนต่าง ๆ ของ Footer
-const footerLinks = {
+const footerLinks = computed(() => ({
   product: [
-    { name: 'Features', href: '#features' },
-    { name: 'How it Works', href: '#how-it-works' },
-    { name: 'Pricing', href: '#' },
-    { name: 'FAQ', href: '#' }
+    { name: $t('footer.links.features'), href: '#features' },
+    { name: $t('footer.links.howItWorks'), href: '#how-it-works' },
+    { name: $t('footer.links.pricing'), href: '#' },
+    { name: $t('footer.links.faq'), href: '#' }
   ],
   company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Careers', href: '#' },
-    { name: 'Contact', href: '#' }
+    { name: $t('footer.links.about'), href: '#' },
+    { name: $t('footer.links.blog'), href: '#' },
+    { name: $t('footer.links.careers'), href: '#' },
+    { name: $t('footer.links.contact'), href: '#' }
   ],
   legal: [
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
-    { name: 'Cookie Policy', href: '#' },
-    { name: 'Licenses', href: '#' }
+    { name: $t('footer.links.privacy'), href: '#' },
+    { name: $t('footer.links.terms'), href: '#' },
+    { name: $t('footer.links.cookies'), href: '#' },
+    { name: $t('footer.links.licenses'), href: '#' }
   ],
   social: [
     { name: 'Twitter', icon: 'i-heroicons-link', href: '#' },
@@ -28,11 +28,11 @@ const footerLinks = {
     { name: 'Instagram', icon: 'i-heroicons-link', href: '#' },
     { name: 'GitHub', icon: 'i-heroicons-link', href: '#' }
   ]
-}
+}))
 </script>
 
 <template>
-    <footer class="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+  <footer class="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <!-- Main Footer Content -->
       <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-8">
@@ -45,7 +45,7 @@ const footerLinks = {
             </span>
           </div>
           <p class="text-gray-600 dark:text-gray-400 mb-4 max-w-xs">
-            Turn your dreams into reality with smart savings tracking and community support.
+            {{ $t('footer.description') }}
           </p>
           <!-- Social Links -->
           <div class="flex space-x-3">
@@ -63,9 +63,9 @@ const footerLinks = {
 
         <!-- Product Links -->
         <div>
-          <h3 class="font-semibold text-gray-900 dark:text-white mb-4">Product</h3>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-4">{{ $t('footer.product') }}</h3>
           <ul class="space-y-3">
-            <li v-for="link in footerLinks.product" :key="link.name">
+            <li v-for="(link, index) in footerLinks.product" :key="index">
               <a 
                 :href="link.href"
                 class="text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
@@ -78,9 +78,9 @@ const footerLinks = {
 
         <!-- Company Links -->
         <div>
-          <h3 class="font-semibold text-gray-900 dark:text-white mb-4">Company</h3>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-4">{{ $t('footer.company') }}</h3>
           <ul class="space-y-3">
-            <li v-for="link in footerLinks.company" :key="link.name">
+            <li v-for="(link, index) in footerLinks.company" :key="index">
               <a 
                 :href="link.href"
                 class="text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
@@ -93,9 +93,9 @@ const footerLinks = {
 
         <!-- Legal Links -->
         <div>
-          <h3 class="font-semibold text-gray-900 dark:text-white mb-4">Legal</h3>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-4">{{ $t('footer.legal') }}</h3>
           <ul class="space-y-3">
-            <li v-for="link in footerLinks.legal" :key="link.name">
+            <li v-for="(link, index) in footerLinks.legal" :key="index">
               <a 
                 :href="link.href"
                 class="text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
@@ -108,14 +108,14 @@ const footerLinks = {
 
         <!-- Newsletter -->
         <div class="col-span-2 md:col-span-4 lg:col-span-1">
-          <h3 class="font-semibold text-gray-900 dark:text-white mb-4">Newsletter</h3>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-4">{{ $t('footer.newsletter.title') }}</h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
-            Get savings tips & updates
+            {{ $t('footer.newsletter.subtitle') }}
           </p>
           <div class="flex gap-2">
             <input 
               type="email" 
-              placeholder="Your email"
+              :placeholder="String($t('footer.newsletter.placeholder'))"
               class="flex-1 px-3 py-2 text-sm border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500"
             />
             <UButton size="sm" color="primary" class="cursor-pointer">
@@ -129,17 +129,17 @@ const footerLinks = {
       <div class="pt-8 border-t border-gray-200 dark:border-gray-800">
         <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p class="text-sm text-gray-600 dark:text-gray-400">
-            © {{ currentYear }} DreamBuddy. All rights reserved.
+            © {{ currentYear }} {{ $t('footer.copyright') }}
           </p>
           <div class="flex items-center space-x-6">
             <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-500 transition-colors">
-              Privacy Policy
+              {{ $t('footer.bottom.privacy') }}
             </a>
             <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-500 transition-colors">
-              Terms of Service
+              {{ $t('footer.bottom.terms') }}
             </a>
             <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-500 transition-colors">
-              Cookies
+              {{ $t('footer.bottom.cookies') }}
             </a>
           </div>
         </div>
